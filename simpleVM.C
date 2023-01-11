@@ -1,7 +1,7 @@
 #define MEMORY_MAX (1 << 16)
 uint16_t memory[MEMORY_MAX]; /* 65536 locations*/
 
-enum{
+enum {
     R_R0 = 0,
     R_R1,
     R_R2,
@@ -17,7 +17,7 @@ enum{
 
 uint16_t reg[R_COUNT]; /* register storage */
 
-enum{
+enum {
     OP_BR = 0, /* branch */
     OP_ADD,    /* add */
     OP_LD,     /* load */
@@ -35,6 +35,16 @@ enum{
     OP_LEA,    /* load effective address */
     OP_TRAP    /* execute trap */
 };
+
+enum {
+    FL_POS = 1 << 0, /* P */
+    FL_ZRO = 1 << 1, /* Z */
+    FL_NEG = 1 << 2  /* N */
+};
+
+
+
+
 
 
 

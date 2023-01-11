@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "simpleVM.C": "cpp"
+        "simpleVM.C": "cpp",
+        "exapmple.C": "cpp"
     }
 }
